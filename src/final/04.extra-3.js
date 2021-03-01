@@ -38,7 +38,7 @@ function Board({squares, onClick}) {
 function Game() {
   const [history, setHistory] = useLocalStorageState('tic-tac-toe:history', [
     Array(9).fill(null),
-  ])
+  ]);
   const [currentStep, setCurrentStep] = useLocalStorageState(
     'tic-tac-toe:step',
     0,
